@@ -1,1 +1,3 @@
-﻿  OpenCV330Template2.vcxproj -> C:\Users\martijn\Documents\Visual Studio 2017\Projects\Tomatenplukkers\x64\Debug\OpenCV330Template2.exe
+﻿  stdafx.cpp
+  OpenCVTemplate.cpp
+  OpenCV330Template2.vcxproj -> C:\Users\martijn\Documents\GitHub\Tomatenplukkers\x64\Debug\OpenCV330Template2.exe

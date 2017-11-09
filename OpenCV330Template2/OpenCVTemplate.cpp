@@ -106,16 +106,23 @@ int main(int argc, char** argv)
 
 	Mat deltaImage = gray_image.clone();
 
+	int k, p;
 	for(int j=0; j<gray_image.cols; j++)
 	{
 		for (int i=0; i < gray_image.rows; i++)
 		{			
-			int p = static_cast<int>(gray_image.at<uchar>(i,j));
+			p = static_cast<int>(gray_image.at<uchar>(i,j));
+
+			if (j != gray_image.cols-1)
+			{
+				k = static_cast<int>(gray_image.at<uchar>(i, (j+1)));
+			}
 
 			//cout << "pixelwaarde(" << i << "," << j << ") = " << p  << endl;
 			//hier komt een mooi algoritme wat de delta bepaald;
+			
+			deltaImage.at<uchar>(i,j) = abs(p-k);
 
-			deltaImage.at<uchar>(i,j) = p;
 		}
 	}
 
