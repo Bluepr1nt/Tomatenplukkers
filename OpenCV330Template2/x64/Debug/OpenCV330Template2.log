@@ -1,3 +1,4 @@
-﻿  stdafx.cpp
-  OpenCVTemplate.cpp
-  OpenCV330Template2.vcxproj -> C:\Users\martijn\Documents\GitHub\Tomatenplukkers\x64\Debug\OpenCV330Template2.exe
+﻿  OpenCVTemplate.cpp
+  Algorithms.cpp
+c:\users\martijn\documents\github\tomatenplukkers\opencv330template2\algorithms.cpp(1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+  Generating Code...
